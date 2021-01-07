@@ -1758,8 +1758,10 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #F5F5F5;
 			color: #3a3939;
+			background: none;
+			box-shadow: inset 0 0 0 1px #3a3939;
+			;
 		}
 
 		input[type="button"].style2,
@@ -1777,8 +1779,8 @@ input, select, textarea {
 			input[type="reset"].style2:hover,
 			button.style2:hover,
 			.button.style2:hover {
-				background: rgba(255, 255, 255, 0.1);
 				color: #F5F5F5 !important;
+				background: rgba(255, 255, 255, 0.1);
 				text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
 			}
 
@@ -2121,6 +2123,41 @@ input, select, textarea {
 			#banner a:hover {
 				border-bottom-color: rgba(255, 255, 255, 0);
 			}
+
+/* Rotating Text */
+.word {
+	font-size: 40px;
+	font-weight: bold;
+	/* position: absolute; */
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: center;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.text-color {
+  color: #19547b;
+}
 
 /* Footer */
 
