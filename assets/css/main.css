@@ -2087,7 +2087,7 @@ input, select, textarea {
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		background: url("images/banner.svg") bottom center no-repeat;
-		padding: 15em 0 10em 0;
+		padding: 10em 0 10em 0;
 		margin: 0;
 		background-size: 125% auto;
 	}
@@ -2126,17 +2126,21 @@ input, select, textarea {
 
 /* Rotating Text */
 .word {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bold;
-	/* position: absolute; */
-  width: 220px;
-  opacity: 0;
+  width: 100%;
+	opacity: 0;
+	margin: .2em 0 .2em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .letter {
-  display: inline-block;
   position: relative;
-  float: center;
+  display: flex;
+	align-items: center;
+	justify-content: center;
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
@@ -2352,7 +2356,14 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 10em 0 12em 0;
+				padding: 20em 0 12em 0;
+			}
+
+		/* Banner */
+
+			#banner {
+				padding: 5em 0 4em 0;
+				background-size: auto, 175% auto;
 			}
 
 	}
@@ -2456,6 +2467,11 @@ input, select, textarea {
 				#banner br {
 					display: none;
 				}
+
+		/* Rotating Text */
+			.word {
+				font-size: 14pt;
+			}
 
 	}
 
