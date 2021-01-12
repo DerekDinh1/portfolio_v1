@@ -2614,7 +2614,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 15em 0 17em 0;
+				padding: 15em 0 15em 0;
 			}
 
 				#header header {
@@ -2655,7 +2655,7 @@ input, select, textarea {
 			}
 
 				#banner header {
-					margin: 0 0 1em 0;
+					margin: 3em 0 1em 0;
 				}
 
 					#banner header h2 {
